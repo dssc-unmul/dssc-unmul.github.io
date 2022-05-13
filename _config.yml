@@ -116,6 +116,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  learning:
+    output: true
+    permalink: /learning/:path/
 
 news_limit: 5
 
