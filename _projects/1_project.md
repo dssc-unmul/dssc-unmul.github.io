@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: Afinity Analysis Sederhana
+description: Membangun afinity analysis sederhana untuk product recommendation
+img: /assets/img/affinity_thumbnail.png
 importance: 1
-category: work
+category: belajar
 ---
 
 Every project has a beautiful feature showcase page.
