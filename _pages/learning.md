@@ -8,6 +8,8 @@ nav: true
 
 ## Fundamental
 
+[Intro to Jupyter Notebook](/assets/pdf/intro_to_jupyter_notebook.pdf)
+
 [Data Science 101](/learning/01_data/)
 
 [Web Scraping](/learning/02_webscrape/)
