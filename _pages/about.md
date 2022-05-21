@@ -17,4 +17,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Data Science Study Club adalah salah satu study club bentukan [Association of Informatics](https://www.instagram.com/ai.unmul/) departemen MBKM. Di dalam study club mahasiswa dapat belajar bersama, memecahkan masalah bersama, berbagi pengalaman, dan lain sebagainya.
+Data science Study Club adalah tempat mahasiswa belajar, diskusi, memecahkan masalah, mengerjakan proyek, dan berbagi pengalaman bersama tentang Ilmu Data atau Data Science
