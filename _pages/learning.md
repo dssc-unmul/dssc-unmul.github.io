@@ -12,7 +12,7 @@ nav: true
 
 [Data Science 101](/learning/01_data/)
 
-[Web Scraping](/learning/02_webscrape/)
+[Web Scraping](/projects/web_scraping/)
 
 [Exploratory Data Analysis](/learning/03_EDA/)
 

@@ -84,7 +84,7 @@ Tidak ada teknik khusus untuk data sekunder. Jadi peneliti mengandalkan data sou
 - Laporan sales
 - Jurnal bisnis
 - Sensus
-- [Catatan pemerintah](data.gov)
+- [Catatan pemerintah](https://data.gov)
 - Internet
 - [Awesome Public Dataset](https://github.com/awesomedata/awesome-public-datasets)
 - [Kaggle](https://kaggle.com)
