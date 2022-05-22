@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Web Scraping
-description: Scraping data dari IMDB <a href="https://colab.research.google.com/github/dssc-unmul/web-scrape/blob/main/webscrape.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>
+description: Scraping data dari IMDB
 img: /assets/img/webscrape_thumbnail.png
 # importance: 1
 category: belajar
@@ -15,8 +15,8 @@ Web Scraping memungkinkan kita untuk mengambil data dari sebuah website secara t
 
 ## Web Scraping IMDB Most Popular Movie
 
-Project bisa dibuka di google colab [![Buka di Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dssc-unmul/web-scrape/blob/main/webscrape.ipynb)
-, atau buka di [github](https://github.com/dssc-unmul/web-scrape/blob/main/webscrape.ipynb).
+Project bisa dibuka di google colab [![Buka di Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dssc-unmul/web-scraping/blob/main/webscrape.ipynb)
+, atau buka di [github](https://github.com/dssc-unmul/web-scraping/blob/main/webscrape.ipynb).
 
 ### Library yang dibutuhkan
 
