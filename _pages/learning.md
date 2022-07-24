@@ -12,6 +12,8 @@ nav: true
 
 [Data Science 101](/learning/01_data/)
 
+[Pandas Basic](/learning/02_pandas/)
+
 [Web Scraping](/projects/web_scraping/)
 
 [Exploratory Data Analysis](/learning/03_EDA/)
