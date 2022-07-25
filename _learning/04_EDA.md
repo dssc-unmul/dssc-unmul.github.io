@@ -52,7 +52,7 @@ Data scientist menghabiskan sekitar 60–70% waktu mereka dalam proyek pada fase
 
 # Hands-On Lab
 
-Notebook hands-on dapat diakses di [github](https://github.com/dssc-unmul/eda/blob/main/Exploratory-Data-Analysis.ipynb) atau langsung buka di colab [![Buka di Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dssc-unmul/eda/blob/main/Exploratory-Data-Analysis.ipynb)
+Notebook hands-on dapat diakses di [github](https://github.com/dssc-unmul/data-analysis/blob/main/Exploratory-Data-Analysis.ipynb) atau langsung buka di colab [![Buka di Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dssc-unmul/data-analysis/blob/main/Exploratory-Data-Analysis.ipynb)
 
 # Sumber
 

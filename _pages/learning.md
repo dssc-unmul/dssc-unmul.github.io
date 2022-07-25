@@ -14,9 +14,9 @@ nav: true
 
 [Pandas Basic](/learning/02_pandas/)
 
-[Web Scraping](/projects/web_scraping/)
+[Data Wrangling](/learning/03_data_wrangling)
 
-[Exploratory Data Analysis](/learning/03_EDA/)
+[Exploratory Data Analysis](/learning/04_EDA/)
 
 [Data Visualization](/learning/04_dataviz/)
 
