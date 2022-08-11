@@ -323,11 +323,7 @@ Supaya tau model ini adalah best fit, lihat:
   - [Polynomial Regression](#polynomial-regression) juga akan punya MSE yang rendah daripada linear regression biasa
   - Hubungan kebalikannya yang serupa juga berlaku untuk R-Squared
 
-<<<<<<< HEAD
-# Model Evaluation
-=======
 # Model Evaluation and Refinement
->>>>>>> 25c98ef (Model development and evaluation material)
 
 Evaluasi model dibutuhkan untuk mengukur akurasi. Akurasi model dapat ditingkatkan dengan banyak metode.
 
