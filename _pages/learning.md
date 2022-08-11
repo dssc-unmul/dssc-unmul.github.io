@@ -18,11 +18,15 @@ nav: true
 
 [Exploratory Data Analysis](/learning/04_EDA/)
 
-[Data Visualization](/learning/04_dataviz/)
+[Model Development and Evaluation](/learning/05_model_development)
 
-## Data Scientist
+[Data Visualization](/learning/06_dataviz/)
 
 ## Machine Learning
+
+[Machine Learning Basic Concept](/learning/07_ML101)
+
+[Machine Learning Methods](/learning/08_ML_method)
 
 ## Deep Learning
 
