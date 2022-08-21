@@ -8,7 +8,7 @@ toc:
         - name: R-Squared dan MSE untuk In-Sample Evaluation
         - name: Model Evaluation dengan Visualisasi
         - name: Prediction dan Decision Making
-    - name: Model Evaluation
+    - name: Model Evaluation and Refinement
 ---
 
 # Model Development
@@ -327,4 +327,4 @@ Supaya tau model ini adalah best fit, lihat:
 
 Evaluasi model dibutuhkan untuk mengukur akurasi. Akurasi model dapat ditingkatkan dengan banyak metode.
 
-Buka hands-on model evaluation di [github](https://github.com/dssc-unmul/data-analysis/blob/main/Model-Evaluation.ipynb) atau langsung buka di colab [![Buka di Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dssc-unmul/data-analysis/blob/main/Model-Evaluation.ipynb)
+Buka hands-on model evaluation di [github](https://github.com/dssc-unmul/data-analysis/blob/main/Model-Evaluation.ipynb) atau langsung buka di colab [![Buka di Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dssc-unmul/data-analysis/blob/main/Model-Evaluation-and-Refinement.ipynb)
