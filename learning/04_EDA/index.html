@@ -2,16 +2,17 @@
 <html lang="id">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://dssc-unmul.github.io//" />    <!-- Metadata, OpenGraph and Schema.org -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
     
 
     <!-- Standard metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>DSSC  Unmul | Page not found</title>
+    <title>DSSC  Unmul | Exploratory Data Analysis</title>
     <meta name="author" content="DSSC  Unmul" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="Official website Data Science Study Club Unmul
+" />
     <meta name="keywords" content="data-science, study-club" />
 
 
@@ -32,7 +33,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://dssc-unmul.github.io//404.html">
+    <link rel="canonical" href="https://dssc-unmul.github.io//learning/04_EDA/">
     
     <!-- Dark Mode -->
     
@@ -113,12 +114,84 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">Exploratory Data Analysis</h1>
+            <p class="post-description"></p>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://dssc-unmul.github.io//">here</a>.</p>
+            <h1 id="introduction">Introduction</h1>
+
+<h2 id="sebuah-analogi">Sebuah Analogi</h2>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/aleksandra-boguslawska-MS7KD9Ti7FQ-unsplash-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/aleksandra-boguslawska-MS7KD9Ti7FQ-unsplash-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/aleksandra-boguslawska-MS7KD9Ti7FQ-unsplash-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/aleksandra-boguslawska-MS7KD9Ti7FQ-unsplash.jpg" title="beach image">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Photo by <a href="https://unsplash.com/@aleksandraboguslawska?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Aleksandra Boguslawska</a> on <a href="https://unsplash.com/s/photos/beach?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a>
+ </div>
+
+<p>Bayangkan kamu dan circle mu rencana mau trip ke pantai. Tapi masih bingung mau pantai mana. Jadi kamu mulai riset sendiri.</p>
+
+<p>Mungkin awalnya kamu nyari “pantai di kalimantan timur”. Kamu hitung biaya perjalanan, apa aja wahananya, bersih atau nggak, dsb. Data-data ini kamu masukin ke spreadsheet.</p>
+
+<p>Temanmu juga mulai nanya-nanya orang pantai ini bagus gak, pantai itu worth ga, dan akhirnya kalian dapat pantai tujuan kalian.</p>
+
+<p>Tindakan apapun yang dilakukan untuk menentukan/menginvestigasi lokasi pantai tujuan adalah apa yang disebut oleh data scientist sebagai <strong>Analisis Data Eksploratif</strong> (bahasa inggrisnya Exploratory Data Analysis atau EDA).</p>
+
+<h2 id="apa-itu-eda">Apa Itu EDA</h2>
+
+<p>Exploratory Data Analysis (EDA), seperti namanya, adalah pendekatan untuk menganalisis/mengeksplorasi kumpulan data untuk merangkum karakteristik kumpulan data dan temuan menarik. Seringkali, karakteristik ini ditampilkan secara visual. Dalam konteks teknis data science, ini mengacu pada proses kritis dalam melakukan penyelidikan awal pada data untuk:</p>
+<ul>
+  <li>Temukan pola</li>
+  <li>Anomali spot</li>
+  <li>Uji hipotesis</li>
+  <li>Periksa asumsi (jika ada) dengan bantuan statistik ringkasan dan representasi grafis.</li>
+</ul>
+
+<h2 id="mengapa-eda">Mengapa EDA</h2>
+
+<p>Alasan utama kita melakukan EDA adalah:</p>
+
+<ul>
+  <li>Untuk melihat bentuk awal data.</li>
+  <li>Untuk menampilkan data sehingga fitur yang paling menarik akan terlihat. Kita kemudian dapat menggunakan fitur ini untuk tujuan machine learning.</li>
+  <li>Untuk mendeteksi kesalahan</li>
+  <li>Untuk memeriksa asumsi</li>
+  <li>Untuk pemilihan awal model yang sesuai</li>
+  <li>Untuk menentukan hubungan antara variabel input, dan</li>
+  <li>Untuk menilai arah dan ukuran kasar hubungan antara variabel input dan target.</li>
+</ul>
+
+<h2 id="letak-proses-eda-dalam-data-science">Letak Proses EDA Dalam Data Science</h2>
+
+<p><img src="https://dphi-live.s3.amazonaws.com/media_uploads/image_827e51adcd4e478fb28e34b488432f75.png" height="320"></p>
+
+<p>Data scientist menghabiskan sekitar 60–70% waktu mereka dalam proyek pada fase data cleaning hingga feature engineering. Dan kira-kira 40–50% dari waktu itu dihabiskan di EDA.</p>
+
+<h1 id="hands-on-lab">Hands-On Lab</h1>
+
+<p>Notebook hands-on dapat diakses di <a href="https://github.com/dssc-unmul/data-analysis/blob/main/Exploratory-Data-Analysis.ipynb" target="_blank" rel="noopener noreferrer">github</a> atau langsung buka di colab <a href="https://colab.research.google.com/github/dssc-unmul/data-analysis/blob/main/Exploratory-Data-Analysis.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Buka di Colab"></a></p>
+
+<h1 id="sumber">Sumber</h1>
+
+<ul>
+  <li><a href="https://dphi.tech/learn/introduction-to-exploratory-data-analysis" target="_blank" rel="noopener noreferrer">DPhi Course Introduction to Exploratory Data Analysis</a></li>
+  <li><a href="https://www.coursera.org/learn/data-analysis-with-python" target="_blank" rel="noopener noreferrer">IBM Coursera Data Analysis with Python</a></li>
+</ul>
 
           </article>
 

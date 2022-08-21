@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+
+  <!-- Head -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DSSC  Unmul | Data Wrangling</title>
+    <meta name="author" content="DSSC  Unmul" />
+    <meta name="description" content="Official website Data Science Study Club Unmul
+" />
+    <meta name="keywords" content="data-science, study-club" />
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="none" id="highlight_theme_light" />
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://dssc-unmul.github.io//learning/03_data_wrangling/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark" />
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav sticky-bottom-footer">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="https://dssc-unmul.github.io//"><span class="font-weight-bold">DSSC</span>   Unmul</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>
+              
+              <!-- Blog -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/blog/">blog</a>
+              </li>
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/learning/">learning</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/projects/">projects</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">publications</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/publications/">publications</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/projects/">projects</a>
+                </div>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <div class="toggle-container">
+                <a id="light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- page.html -->
+        <div class="post">
+
+          <header class="post-header">
+            <h1 class="post-title">Data Wrangling</h1>
+            <p class="post-description"></p>
+          </header>
+
+          <article>
+            <p>Data wrangling, biasa juga disebut data cleaning, data preprocessing, dll. Semua jatuh pada maksud yang sama yaitu proses transformasi dan mapping data dari satu format ke format lain. Tujuannya adalah untuk membuat format data lebih mudah digunakan untuk hal-hal seperti analisis bisnis atau machine learning.</p>
+
+<p>Mari mulai dengan import library yang dibutuhkan yaitu <code class="language-plaintext highlighter-rouge">matplotlib.pyplot</code> dan <code class="language-plaintext highlighter-rouge">pandas</code>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+</code></pre></div></div>
+
+<p>Kemudian muat data dari URL berikut: https://archive.ics.uci.edu/ml/machine-learning-databases/autos/imports-85.data . Tidak perlu bingung, file data ini jika dibuka dengan teks editor akan berformat seperti file csv, jadi kita bisa menggunakan fungsi <code class="language-plaintext highlighter-rouge">read_csv</code> dari pandas.</p>
+
+<p>Perlu diperhatikan data ini tidak memiliki <em>header</em> atau nama kolom sehingga pandas akan membuat baris pertama pada data sebagai headernya secara default. Karena itu kita membutuhkan nama header yang sesuai dengan kolom-kolomnya. Nama-nama kolom ini bisa kita dapatkan dari sumber yang sama yaitu di https://archive.ics.uci.edu/ml/machine-learning-databases/autos/imports-85.names.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">filename</span> <span class="o">=</span> <span class="s">"https://archive.ics.uci.edu/ml/machine-learning-databases/autos/imports-85.data"</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">[</span><span class="s">"symboling"</span><span class="p">,</span><span class="s">"normalized-losses"</span><span class="p">,</span><span class="s">"make"</span><span class="p">,</span><span class="s">"fuel-type"</span><span class="p">,</span><span class="s">"aspiration"</span><span class="p">,</span> <span class="s">"num-of-doors"</span><span class="p">,</span><span class="s">"body-style"</span><span class="p">,</span>
+         <span class="s">"drive-wheels"</span><span class="p">,</span><span class="s">"engine-location"</span><span class="p">,</span><span class="s">"wheel-base"</span><span class="p">,</span> <span class="s">"length"</span><span class="p">,</span><span class="s">"width"</span><span class="p">,</span><span class="s">"height"</span><span class="p">,</span><span class="s">"curb-weight"</span><span class="p">,</span><span class="s">"engine-type"</span><span class="p">,</span>
+         <span class="s">"num-of-cylinders"</span><span class="p">,</span> <span class="s">"engine-size"</span><span class="p">,</span><span class="s">"fuel-system"</span><span class="p">,</span><span class="s">"bore"</span><span class="p">,</span><span class="s">"stroke"</span><span class="p">,</span><span class="s">"compression-ratio"</span><span class="p">,</span><span class="s">"horsepower"</span><span class="p">,</span>
+         <span class="s">"peak-rpm"</span><span class="p">,</span><span class="s">"city-mpg"</span><span class="p">,</span><span class="s">"highway-mpg"</span><span class="p">,</span><span class="s">"price"</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>Maka untuk memuat datanya gunakan fungsi <code class="language-plaintext highlighter-rouge">read_csv</code> dengan argumen pertama file datanya dan argumen berikutnya tambahkan <code class="language-plaintext highlighter-rouge">names</code> bernilai list nama header yang sudah kita buat kemudian masukkan ke dalam variabel. Variabel ini yang selanjutnya akan kita gunakan untuk mengakses data hingga akhir notebook.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Berikut langkah-langkah untuk melakukan proses data wrangling.</p>
+
+<h2 id="missing-value">Missing Value</h2>
+
+<h3 id="bagaimana-cara-mengatasi-missing-value">Bagaimana cara mengatasi missing value</h3>
+
+<ul>
+  <li>Cek lagi sumbernya</li>
+  <li>Hapus (<em>drop</em>) missing valuenya dengan impact paling minimum
+       - Hapus kolomnya
+       - Hapus baris data nya, datanya memang banyak</li>
+  <li>Ganti missing value
+       - Ganti dengan rata-rata
+       - Ganti dengan modus (yang paling banyak), untuk data non-numerik
+       - Ganti menggunakan fungsi custom. Biasanya kalau udah tau apa yang harus masuk ke situ
+       - Tinggalkan aja sebagai missing data</li>
+</ul>
+
+<h3 id="gimana-cara-menghapus-missing-value">Gimana cara menghapus missing value</h3>
+
+<p>Gunakan <code class="language-plaintext highlighter-rouge">df.dropna()</code>. Tambahkan parameter <code class="language-plaintext highlighter-rouge">axis=0</code> untuk menghapus baris (default), <code class="language-plaintext highlighter-rouge">axis=1</code> untuk menghapus kolom.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="p">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s">"price"</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Nilai pada parameter <code class="language-plaintext highlighter-rouge">subset</code> adalah untuk kolom yang punya missing value, <code class="language-plaintext highlighter-rouge">inplace=True</code> untuk membuat perubahan langsung di dataframenya.</p>
+
+<p>Kode diatas sama dengan</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s">"price"</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="cara-mengganti-missing-value">Cara mengganti missing value</h3>
+
+<p>Gunakan <code class="language-plaintext highlighter-rouge">df.replace(missing_value, new_value)</code></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mean</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">"normalized-losses"</span><span class="p">].</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s">"normalized-losses"</span><span class="p">].</span><span class="n">replace</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">mean</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="data-formatting">Data Formatting</h2>
+
+<p>Data formatting adalah mengubah data menjadi <mark>standar umum</mark> sehingga kita bisa membuat perbandingan yang bermakna.</p>
+
+<h3 id="mengaplikasikan-perhitungan-ke-kolom">Mengaplikasikan perhitungan ke kolom</h3>
+
+<p>Misalnya mau mengubah “mpg” (<em>miles per galon</em>) ke “L/100km”</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="p">[</span><span class="s">"city-mpg"</span><span class="p">]</span><span class="o">=</span><span class="mi">235</span><span class="o">/</span><span class="n">df</span><span class="p">[</span><span class="s">"city-mpg"</span><span class="p">]</span>
+</code></pre></div></div>
+<p>kemudian ganti nama kolomnya</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="p">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s">"city-mpg"</span><span class="p">:</span> <span class="s">"city-L/100km"</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="tipe-data-yang-salah">Tipe data yang salah</h3>
+
+<p>Untuk mengubah tipe data yang salah, convert dengan <code class="language-plaintext highlighter-rouge">df.astype()</code></p>
+
+<p>contoh:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="p">[</span><span class="s">"price"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">"price"</span><span class="p">].</span><span class="n">astype</span><span class="p">(</span><span class="s">"int"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="data-normalization">Data Normalization</h2>
+
+<p>Kenapa data harus dinormalisasi. Kalau misalnya mau dilakukan regresi linier, fitur dengan nilai yang tinggi bakal dapat influence yang lebih tinggi padahal seharusnya tidak.</p>
+
+<p>Bayangkan ada kolom pada data punya range yang berbeda, misal <code class="language-plaintext highlighter-rouge">umur</code> yang mana range nya sekitar 17-65 dan <code class="language-plaintext highlighter-rouge">pendapatan</code> dengan range 500000-12000000, kemudian dua kolom ini akan dijadikan variabel prediktor untuk model prediksi misal regresi linear, fitur/kolom/variabel <code class="language-plaintext highlighter-rouge">pendapatan</code> bakal punya pengaruh yang lebih tinggi karena nilai jauh lebih tinggi dari umur padahal seharusnya tidak demikian dan akhirnya akurasi model menurun. Makanya perlu dilakukan normalisasi terlebih dahulu.</p>
+
+<h3 id="metode-normalisasi-data">Metode Normalisasi Data</h3>
+
+<ol>
+  <li>
+    <p>Simple feature scaling</p>
+
+\[x_{new} = \frac{x_{old}}{x_{max}}\]
+  </li>
+  <li>
+    <p>Min-Max</p>
+
+\[x_{new} = \frac{x_{old} - x_{min}}{x_{max} - x_{min}}\]
+  </li>
+  <li>
+    <p>Z-score</p>
+
+\[x_{new} = \frac{x_{old} - \mu}{\sigma}\]
+  </li>
+</ol>
+
+<h2 id="binning">Binning</h2>
+
+<p>Binning adalah membuat group value kedalam bin. Misalnya mem-bin “age” ke 0-5, 6-10, 11-15,…</p>
+
+<p>Biasanya binning digunakan untuk mengelompokkan beberapa nilai numerik ke dalam bin dengan nilai yang lebih sedikit supaya dapat memahami distribusi data lebih baik.</p>
+
+<p>Dalam dataset, jika ingin mengelompokkan price menjadi low, medium high, gunakan</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">bins</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linspace</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">"price"</span><span class="p">]),</span> <span class="nb">max</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">"price"</span><span class="p">]),</span> <span class="mi">4</span><span class="p">)</span>
+</code></pre></div></div>
+<ul>
+  <li>untuk membagi nilai menjadi 3 kategori kita butuh 4 angka</li>
+  <li>4 angka dengan jarak yang <em>equally distributed</em>. Gunakan <code class="language-plaintext highlighter-rouge">np.linspace</code>.</li>
+  <li>dimulai dari nilai paling rendah <code class="language-plaintext highlighter-rouge">min(df["price"])</code> ke nilai paling tinggi <code class="language-plaintext highlighter-rouge">max(df["price"])</code>
+</li>
+</ul>
+
+<p>kemudian buat nama kategorinya</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">group_names</span> <span class="o">=</span> <span class="p">[</span><span class="s">"low"</span><span class="p">,</span> <span class="s">"medium"</span><span class="p">,</span> <span class="s">"high"</span><span class="p">]</span>
+</code></pre></div></div>
+<p>lalu gunakan function <code class="language-plaintext highlighter-rouge">pd.cut()</code></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="p">[</span><span class="s">"price-binned"</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">cut</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">"price"</span><span class="p">],</span> <span class="n">bins</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">group_names</span><span class="p">,</span> <span class="n">include_lowest</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Kemudian hasil bin ini bisa divisualisasikan dengan histogram.</p>
+
+<h2 id="mengubah-variabel-kategorik-menjadi-variabel-kuantitatif">Mengubah variabel kategorik menjadi variabel kuantitatif</h2>
+
+<p>Statistical model (mis. regresi linear) biasanya tidak bisa menggunakan string/object sebagai inputnya.</p>
+
+<p>Jadi solusinya adalah mengubahnya menjadi 0 dan 1. Teknik ini biasa disebut <a href="https://www.educative.io/blog/one-hot-encoding" target="_blank" rel="noopener noreferrer">One-Hot Encoding</a>:</p>
+
+<ul>
+  <li>bikin dummy variables untuk setiap kategori</li>
+  <li>masukkan 0 atau 1 dalam setiap kategori
+       - masukkan 1 untuk setiap kategori yang dijadikan dummy yang sesuai</li>
+</ul>
+
+<h3 id="dummy-variables-di-pandas">Dummy variables di pandas</h3>
+
+<p>Gunakan function <code class="language-plaintext highlighter-rouge">pd.get_dummies()</code></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pd</span><span class="p">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">"fuel"</span><span class="p">])</span>
+</code></pre></div></div>
+<p>Akan menghasilkan dummy variabel dengan nilai 0 dan 1 yang bersesuaian dengan kolom fuel.</p>
+
+<h1 id="hands-on-lab">Hands-on Lab</h1>
+
+<p>Sekarang coba praktikan dengan akses notebook hands-on di <a href="https://github.com/dssc-unmul/data-analysis/blob/main/Data-Wrangling.ipynb" target="_blank" rel="noopener noreferrer">github</a> atau buka di google colab <a href="https://colab.research.google.com/github/dssc-unmul/data-analysis/blob/main/Data-Wrangling.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Buka di Colab"></a></p>
+
+<h1 id="sumber">Sumber</h1>
+
+<ul>
+  <li><a href="https://www.coursera.org/learn/data-analysis-with-python" target="_blank" rel="noopener noreferrer">IBM Coursera Data Analysis with Python</a></li>
+</ul>
+
+          </article>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2022 DSSC  Unmul. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
+Last updated: August 21, 2022.
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script src="/assets/js/common.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+  </body>
+</html>
+

@@ -2,16 +2,16 @@
 <html lang="id">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://dssc-unmul.github.io//" />    <!-- Metadata, OpenGraph and Schema.org -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
     
 
     <!-- Standard metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>DSSC  Unmul | Page not found</title>
+    <title>DSSC  Unmul | Afinity Analysis Sederhana</title>
     <meta name="author" content="DSSC  Unmul" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="Membangun afinity analysis sederhana untuk product recommendation" />
     <meta name="keywords" content="data-science, study-club" />
 
 
@@ -32,7 +32,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://dssc-unmul.github.io//404.html">
+    <link rel="canonical" href="https://dssc-unmul.github.io//projects/affinity_analysis/">
     
     <!-- Dark Mode -->
     
@@ -113,12 +113,100 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">Afinity Analysis Sederhana</h1>
+            <p class="post-description">Membangun afinity analysis sederhana untuk product recommendation</p>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://dssc-unmul.github.io//">here</a>.</p>
+            <h2 id="chapter-1-memulai-data-mining">Chapter 1 Memulai Data Mining</h2>
+
+<p>Saat ini kita mengumpulkan informasi pada skala yang tidak pernah dicapai sebelumnya pada sejarah umat manusia dan menerapkan kepentingan penggunaan informasi ini di kehidupan sehari-hari kita. Kita mengharapkan komputer bisa melakukan apapun mulai dari terjemahin halaman web sampai merekomendasikan barang yang kita beli.</p>
+
+<p>Data mining adalah metodologi yang bisa kita terapkan untuk melatih komputer agar dapat membuat keputusan dari data dan sebagai kekuatan pada banyak sistem teknologi saat ini.</p>
+
+<p>Bahasa pemrograman Python sudah berkembang dalam popularitasnya. Sintaks nya mudah dibaca dan yang paling jelas dibanding bahasa pemrograman lain. Ada banyak komunitas peneliti, praktisi, dan pemula yang menggunakan Python untuk data mining.</p>
+
+<h3 id="intro-to-data-mining">Intro to Data Mining</h3>
+
+<p>Data mining is part of algorithms, statistics, engineering, optimization, and computer science. We also use concepts and knowledge from other fields such as linguistics, neuroscience, or town planning. Applying it effectively usually requires this domain-specific knowledge to be integrated with the algorithms.</p>
+
+<p>Untuk memulai proses data mining, kita buat sebuah dataset. Dataset mengandung dua aspek berikut:</p>
+
+<ul>
+  <li>Sampel, adalah objek pada dunia nyata. Contohnya buku, hewan, orang, dll.</li>
+  <li>Fitur, adalah deskripsi dari sampel dalam dataset. Contohnya panjang, jumlah kaki, tanggal dibuat, dll.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Orang</th>
+      <th>Tinggi</th>
+      <th>Tinggi atau pendek</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>155 cm</td>
+      <td>pendek</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>165 cm</td>
+      <td>pendek</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>175 cm</td>
+      <td>tinggi</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>185 cm</td>
+      <td>tinggi</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>sebagai contoh, kita mau komputer bisa menyebutkan orang ini pendek atau tinggi. Kita mulai dengan mengumpulkan data yang isinya ukuran tinggi dari orang-orang yang berbeda dan apakah dia dianggap tinggi atau pendek</p>
+</blockquote>
+
+<p>Langkah selanjutnya adalah tuning algoritma. Anggaplah ini adalah algoritma yang simpel; jika tinggi lebih dari \(x\), orang nya tinggi, jika tidak orangnya rendah.</p>
+
+<blockquote>
+  <p>anggaplah x nya adalah 170. Yang lebih dari 170 dianggap tinggi, sisanya pendek. Di praktek nanti ada dataset asli untuk mengetahui orang pendek atau tinggi.</p>
+</blockquote>
+
+<h2 id="persiapan-environment">Persiapan Environment</h2>
+
+<ul>
+  <li>Install python</li>
+  <li>Install jupyter notebook</li>
+  <li>Install pandas
+    <div class="language-console highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="go">  conda install pandas
+</span></code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="affinity-analysis-sederhana">Affinity Analysis Sederhana</h3>
+
+<p><a href="https://github.com/dssc-unmul/affinity-analysis/blob/main/Affinity.ipynb" target="_blank" rel="noopener noreferrer">Notebook project</a> atau <a href="https://colab.research.google.com/github/dssc-unmul/affinity-analysis/blob/main/Affinity.ipynb" target="_blank" rel="noopener noreferrer"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Buka di Colab"></a></p>
+
+<hr>
+
+<h2 id="summary">Summary</h2>
+
+<hr>
+
+<h2 id="resource">Resource</h2>
+
+<ul>
+  <li><a href="https://newoutlook.it/download/python/learning-data-mining-with-python.pdf" target="_blank" rel="noopener noreferrer">buku pdf</a></li>
+  <li><a href="https://github.com/PacktPublishing/Learning-Data-Mining-with-Python" target="_blank" rel="noopener noreferrer">github repo dari buku</a></li>
+</ul>
 
           </article>
 
